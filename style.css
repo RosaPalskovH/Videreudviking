@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+/*Indsætter farvevariaber fra VMR Gypsyjazzs farvepalette*/
+:root{
+    --baggrund: #201E1C;
+    --titel: #205ADB;
+    --knap: #A88362;
+    --boks: #E8E4E0;
+}
+
+/*Overskriver de padding/margin indstillinger diverse browsere har)*/
+* {
+    padding: 0; 
+    margin: 0;
+}
+
+h1 {
+    font-family: 'playfair display', 'sans-serif';
+    
+}
+
+p {
+    font-family: 'montserrat', 'sans-serif';
+}
