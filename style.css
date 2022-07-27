@@ -30,3 +30,61 @@ p {
     color: var(--baggrund);
 }
 
+#lystekst {
+    color: var(--boks);
+}
+
+hr {
+    color: var(--knap);
+}
+
+section {
+    width: fit-content;
+}
+
+.tekstboks {
+    background-color: var(--boks);
+}
+
+@media screen and (max-width:400px) {
+
+h1{
+    font-size: 23px;
+    text-align: center;
+}
+
+.tekstboks {
+    border-radius: 6px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 52px;
+}
+
+section {
+
+}
+
+    /*tilpasser størrelse på alle sidens billeder*/
+  
+    #logoimg {
+        width: 80%;
+    
+    }
+
+    #guitar {
+        width: 80%;
+    }
+
+    #portræt {
+        width: 60%;
+    }
+
+    #portræt2 {
+        width: max-content;
+    }
+}
+
