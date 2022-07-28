@@ -25,7 +25,7 @@ h1 {
     color: var(--titel);
 }
 
-h2{
+h2 {
     color: var(--titel);
 }
 
@@ -56,6 +56,21 @@ hr {
     color: var(--knap);
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    color: var(--knap);
+    text-decoration: none;
+    font-weight: 900;
+    font-family: playfair display;
+    
+}
+
 /*styling af containere*/
 section {
     display: flex;
@@ -64,6 +79,7 @@ section {
 .tekstboks {
     background-color: var(--boks);
 }
+
 
 footer {
     background-color: var(--boks);
@@ -77,10 +93,19 @@ footer {
 @media screen and (max-width:400px) {
 
     h1 {
-        font-size: 23px;
+       
         text-align: center;
     }
 
+    p {
+        font-size: 16px;
+    }
+
+    #lystekst {
+        margin: 26px;
+    }
+
+    /*styling af containere*/
 
     .tekstboks {
         border-radius: 6px;
@@ -96,6 +121,7 @@ footer {
     section {
         width: 100%;
         margin-top: 26px;
+        margin-bottom: 26px;
 
         /*blanding af flex direction og flex wrap*/
         flex-flow: row wrap;
@@ -103,6 +129,13 @@ footer {
         justify-content: center;
 
     }
+
+    nav ul {
+        margin: 26px;
+        font-size: 12px;
+        justify-content: space-evenly;
+    }
+
 
     footer {
         padding-left: 26px;
