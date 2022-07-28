@@ -18,15 +18,119 @@ body{
     background-color: var(--baggrund);
 }
 
+/*Styling af tekst*/
 h1 {
     font-family: 'playfair display', 'sans-serif';
     font-weight: 900;
     color: var(--titel);
 }
 
+h2{
+    color: var(--titel);
+}
+
+h3{
+    color: var(--knap);
+}
+
+h4{
+    color: var(--knap);
+}
+
 p {
     font-family: 'montserrat', 'sans-serif';
     font-weight: 400;
     color: var(--baggrund);
+}
+
+#lystekst {
+    color: var(--boks);
+}
+
+footer p {
+    color: var(--knap);
+}
+
+
+hr {
+    color: var(--knap);
+}
+
+/*styling af containere*/
+section {
+    display: flex;
+}
+
+.tekstboks {
+    background-color: var(--boks);
+}
+
+footer {
+    background-color: var(--boks);
+}
+
+
+
+
+/*Media queries til mobilformat*/
+
+@media screen and (max-width:400px) {
+
+    h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+
+    .tekstboks {
+        border-radius: 6px;
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        margin-left: 26px;
+        margin-right: 26px;
+        margin-top: 52px;
+    }
+
+    section {
+        width: 100%;
+        margin-top: 26px;
+
+        /*blanding af flex direction og flex wrap*/
+        flex-flow: row wrap;
+        
+        justify-content: center;
+
+    }
+
+    footer {
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 40px;
+        padding-bottom: 26px;
+    }
+
+
+
+
+    /*tilpasser størrelse på alle sidens billeder*/
+  
+    #logoimg {
+        width: 80%;
+    
+    }
+
+    #guitar {
+        width: 87%;
+    }
+
+    #portræt {
+        width: 60%;
+    }
+
+    #portræt2 {
+        width: 100%;
+    }
 }
 
