@@ -141,7 +141,7 @@ footer {
 
    /*styling af tekst*/
     h1 {
-       
+        font-size: 23px;
         text-align: center;
     }
 
@@ -299,3 +299,170 @@ footer {
     }
 }
 
+
+
+
+/*Media queries til desktopformat*/
+
+@media screen and (min-width:768px){
+   
+     /*styling af tekst*/
+     h1 {
+       font-size: 50px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    #bio-titel {
+        margin-top: 120px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .lystekst {
+        margin: 140px;
+    }
+
+    #kontakt p{
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 40px;
+    }
+
+    nav button {
+        font-size: 12px;
+    }
+
+    /*styling af containere*/
+    nav ul {
+        margin: 26px;
+        justify-content: space-evenly;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: 52px;
+
+        /*blanding af flex direction og flex wrap*/
+        flex-flow: row wrap;
+        
+        /*placere alt indhold i section i midten*/
+        justify-content: center;
+
+    }
+
+    .tekstboks {
+        border-radius: 6px;
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        margin-left: 140px;
+        margin-right: 140px;
+        margin-top: 52px;
+    }
+
+    footer {
+        padding-left: 26px;
+        padding-right: 26px;
+        padding-top: 40px;
+        padding-bottom: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    /*styling af grafiske elementer*/
+    hr {
+        
+        border-style: solid;
+        border-width: 0 0 2px 0;
+        margin-top: 8px;
+        margin-bottom: 26px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #play-hr{
+        width: 80px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #contact-icon {
+        font-size: 22.82px;
+        margin: 30px;
+    }
+
+    #brown-icon {
+        font-size: 26.16px;
+        margin-top: 16px;
+    }
+
+    /*Styling af knapper*/
+
+    /*download knap*/
+    #dl-knap {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    }
+
+    #dl-knap i {
+        margin-right: 10px;
+    }
+
+    /*tilpasser størrelse på alle sidens billeder*/
+  
+    #logoimg {
+        width: 80%;
+        margin-bottom: 30px;
+
+        /*midlertidig løsning*/
+        margin-left: 40px;
+    }
+
+    #guitar {
+        width: 87%;
+    }
+
+    #portræt {
+        width: 205px;
+        float: inline-start;
+    }
+
+    #portræt2 {
+        width: 100%;
+    }
+
+    #logo {
+        width: 70px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+}
