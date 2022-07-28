@@ -16,6 +16,11 @@
     margin: 0;
 }
 
+/*gør "scroll" bevægelse smooth, ved*/
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--baggrund);
 }
@@ -61,8 +66,10 @@ nav ul {
     flex-wrap: nowrap;
 }
 
-nav a {
+nav button {
     color: var(--knap);
+    background-color: #201E1C;
+    border: none;
     text-decoration: none;
     font-weight: 900;
     font-family: playfair display;
@@ -95,7 +102,6 @@ header {
     flex-direction: column;
 }
 
-
 section {
     display: flex;
     position: relative;
@@ -107,6 +113,13 @@ section {
 
 footer {
     background-color: var(--boks);
+}
+
+/*styling af "scroll til toppen" knap*/
+#scroll-up {
+    background-color: var(--baggrund);
+    border: none;
+    padding: 26px;
 }
 
 
@@ -154,11 +167,13 @@ footer {
         margin-bottom: 20px;
     }
 
+    nav button {
+        font-size: 12px;
+    }
 
     /*styling af containere*/
     nav ul {
         margin: 26px;
-        font-size: 12px;
         justify-content: space-evenly;
     }
 
