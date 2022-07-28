@@ -44,10 +44,12 @@
     </section>
 
     <section id="biografi">
-        <img id="portræt" src="/images/portræt.png" alt="Portræt af VMR Gypsyjazz">
+        <div class="overlay-img">
+            <img id="portræt" src="/images/portræt.png" alt="Portræt af VMR Gypsyjazz">
+        </div>
         
         <div class="tekstboks">
-            <h1>Biografi</h1>
+            <h1 id="bio-titel">Biografi</h1>
             <hr>
 
             <p>VMR Gypsyjazz blev dannet i 2019, og udgøres af Karsten Møller og Rolf Hansen. Siden barndommen har duoens medlemmer haft autodidakt erfaring med flere instrumenter, og har i deres ungdom taget adskillige lektioner. Begge har de fundet behag i at optræde på scenen i en ung alder, både i samspil samt solo. Gypsyjazzen har altid været en perifer del af Karsten Møller og Rolf Hansens liv, men gennem de sidste år har guitaristerne for alvor dedikeret sig til genren.
@@ -55,7 +57,7 @@
                 Duoens akustiske lounge musik spilles på den traditionelle Selmer guitar, og kommer til udtryk i form af hurtigt solospil kombineret med fast rytmespil, med den famøse guitarist Django Reinhardt som muse. VMR Gypsyjazz har kunnet opleves ved begivenheder såsom Vordingborg festuge, Jazzfest i København samt indtagende cafe-aftener på Sydsjælland.
             </p>
         
-            <hr>
+            <hr id="play-hr">
             <h2>Lyt til vores musik her!</h2>
             <i id="brown-icon" class="fa-solid fa-circle-play"></i>
         </div>
@@ -63,10 +65,9 @@
     </section>
 
     <section id="pressmeddelelse">
-        <h1>Pressemeddelse</h1>
-        <hr>
+        <h1>Pressemeddelse <hr></h1>
 
-        <p id="lystekst">Er de interesseret i nærmere information om VMR Gypsyjazz, kan de tilgå duoens pressemeddelelse ved den understående knap.</p>
+        <p class="lystekst">Er de interesseret i nærmere information om VMR Gypsyjazz, kan de tilgå duoens pressemeddelelse ved den understående knap.</p>
         <button></button>
     </section>
 
@@ -92,9 +93,12 @@
             <i id="contact-icon" class="fa-solid fa-phone"></i>
             <p>
                 Rolf Hansen
-                53 80 63 67
                 <br>
+                53 80 63 67
+            </p>  
+            <p> 
                 Karsten Møller
+                <br>
                 53 66 33 75
             </p>
         </div>
@@ -102,16 +106,16 @@
     </section>
 
     <section>
-        <h1>Følg VMR Gypsyjazz <br> på Facebook</h1>
-        <hr>
+        <h1>Følg VMR Gypsyjazz <br> på Facebook <hr></h1>
+    
+        <p class="lystekst">VMR Gypsyjazz opdaterer på Facebook sine følgere om spillesteder samt øvesessioner, og informerer kontinuerligt viden indenfor gypsyjazz genren.</p>
         
-        <p id="lystekst">VMR Gypsyjazz opdaterer på Facebook sine følgere om spillesteder samt øvesessioner, og informerer kontinuerligt viden indenfor gypsyjazz genren.</p>
         
-        <i id="brown-icon" class="fa-brands fa-facebook"></i>
 
         <img src="" alt="">
-        <a href="https://www.facebook.com/profile.php?id=100063921492172">VMR Gypsyjazzs Facebook side</a>
+        <a href="https://www.facebook.com/profile.php?id=100063921492172"><i id="brown-icon" class="fa-brands fa-facebook"></i></a>
 
+  
         <i id="brown-icon" class="fa-solid fa-circle-chevron-up"></i>
     </section>
 
@@ -119,22 +123,32 @@
         <h3>Kontakt</h3>
 
         <h4>Telefon:</h4>
+        
         <p>Rolf Hansen
+            <br>
             53 80 63 67
-        <br>
-        Karsten Møller
-        53 66 33 75
+        </p>
+        
+        <p>
+            Karsten Møller
+            <br>
+            53 66 33 75
         </p>
 
         <h4>Mail:</h4>
+
         <p>Rolf Hansen
-        rolfedrengen@gmail.com
-        <br>
+            <br>
+            rolfedrengen@gmail.com
+        </p>
+        
+        <p>
         Karsten Møller
+        <br>
         karstenodemar@gmail.com
         </p>
 
-        <img src="" alt="">
+        <img id="logo" src="/images/logo.png" alt="VMR Gypsyjazz logo">
         <p>© 2022 VMR Gypsyjazz</p>
     </footer>
 </body>
