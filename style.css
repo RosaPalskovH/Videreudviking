@@ -134,7 +134,6 @@ footer {
 
 
 
-
 /*Media queries til mobilformat*/
 
 @media screen and (max-width:400px) {
@@ -212,6 +211,8 @@ footer {
         margin-top: 52px;
     }
 
+
+
     footer {
         padding-left: 26px;
         padding-right: 26px;
@@ -248,11 +249,7 @@ footer {
         margin: 30px;
     }
 
-    #brown-icon {
-        font-size: 26.16px;
-        margin-top: 16px;
-    }
-
+   
     /*Styling af knapper*/
 
     /*download knap*/
@@ -268,6 +265,19 @@ footer {
     #dl-knap i {
         margin-right: 10px;
     }
+
+    /*scroll til top og facebook link*/
+    #brown-icon {
+        font-size: 26.16px;
+        margin-top: 16px;
+    }
+
+    /*play knap*/
+    #music {
+        margin-top: 26px;
+        width: 150px;
+    }
+
 
     /*tilpasser størrelse på alle sidens billeder*/
   
@@ -314,6 +324,7 @@ footer {
 
     h2 {
         font-size: 30px;
+        margin-left: 10%;
     }
 
     h3 {
@@ -326,16 +337,21 @@ footer {
         margin-top: 20px;
     }
 
-    #bio-titel {
-        margin-top: 120px;
-    }
-
     p {
         font-size: 16px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
     }
 
     .lystekst {
-        margin: 140px;
+        margin-left: 10%;
+        margin-bottom: 6%;
+    }
+
+   
+    #biografi i {
+        margin-left: 10%;
     }
 
     #kontakt p{
@@ -345,38 +361,52 @@ footer {
     footer p {
         margin-bottom: 40px;
     }
-
-    nav button {
-        font-size: 12px;
-    }
-
-    /*styling af containere*/
     nav ul {
         margin: 26px;
-        justify-content: space-evenly;
+        justify-content: right;
+    }
+    nav button {
+        font-size: 30px;
+        padding-right: 70px;
     }
 
+    nav button:hover {
+        color: var(--boks);
+    }
+
+
+
+    /*styling af containere*/
     section {
         width: 100%;
-        margin-bottom: 52px;
+        margin-bottom: 8%;
 
         /*blanding af flex direction og flex wrap*/
         flex-flow: row wrap;
-        
-        /*placere alt indhold i section i midten*/
-        justify-content: center;
+    }
 
+    .center-section {
+        justify-content: center;
     }
 
     .tekstboks {
-        border-radius: 6px;
-        padding-left: 26px;
-        padding-right: 26px;
-        padding-top: 40px;
-        padding-bottom: 60px;
-        margin-left: 140px;
-        margin-right: 140px;
-        margin-top: 52px;
+        width: 49.48%;
+        border-radius: 0.60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 2.71%;
+        margin-left: 7.29%;
+        margin-right: 7.29%;
+    }
+
+    #biografi .tekstboks {
+
+        /*midlertidig løsning*/
+        margin-left: 50%;
+    }
+
+    #biografi p {
+        margin-bottom: 15%;
     }
 
     footer {
@@ -391,36 +421,44 @@ footer {
     }
 
 
+
     /*styling af grafiske elementer*/
     hr {
         
         border-style: solid;
-        border-width: 0 0 2px 0;
-        margin-top: 8px;
-        margin-bottom: 26px;
-        margin-left: 40px;
-        margin-right: 40px;
+        border-width: 0 0 3px 0;
+        margin-top: 0.95%;
+        margin-bottom: 7.29%;
+        margin-left: 22%;
+        margin-right: 22%;
     }
 
-    #play-hr{
-        width: 80px;
-        margin-top: 30px;
+    #play-hr {
+        width: 30%;
+        margin-top: 4%;
         margin-bottom: 8px;
-        margin-left: 0;
+        margin-left: 10%;
         margin-right: 0;
     }
-
+ 
     #contact-icon {
         font-size: 22.82px;
         margin: 30px;
     }
 
-    #brown-icon {
-        font-size: 26.16px;
-        margin-top: 16px;
-    }
 
     /*Styling af knapper*/
+    
+    /*tilføj anden farve ved hover på "scroll til top" og Facebook knapper*/
+   #brown-icon:hover {
+        color: var(--boks);
+    }
+    
+    /*justere størrelse af ikoner*/
+    #brown-icon{
+        font-size: 50px;
+        margin: 3%;
+    }
 
     /*download knap*/
     #dl-knap {
@@ -429,30 +467,55 @@ footer {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 4px;
-    margin-bottom: 26px;
     }
 
     #dl-knap i {
         margin-right: 10px;
     }
 
+    /*tilføj anden farve ved hover på "download" knap*/
+    #dl-knap:hover {
+        background-color: #E8E4E0;
+    }
+
+    /*play knap*/
+#music {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+    
+
+    
+
+
+
     /*tilpasser størrelse på alle sidens billeder*/
   
     #logoimg {
-        width: 80%;
+        width: 60%;
         margin-bottom: 30px;
 
         /*midlertidig løsning*/
-        margin-left: 40px;
+        margin-left: 120px;
     }
 
     #guitar {
-        width: 87%;
+        height: 92%;
+        position: absolute;
+        z-index: -10;
+        margin-right: 7.29%;
+        border-radius: 0.60%;
+        margin-top: 2.71%;
+
+        /*midlertidig løsning*/
+        margin-left: 46%;
     }
 
     #portræt {
-        width: 205px;
+        width: 45%;
         float: inline-start;
+        margin: 3%;
     }
 
     #portræt2 {
