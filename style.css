@@ -136,7 +136,7 @@ footer {
 
 /*Media queries til mobilformat*/
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
 
    /*styling af tekst*/
     h1 {
