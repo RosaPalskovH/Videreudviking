@@ -58,7 +58,6 @@ footer p {
     color: var(--knap);
 }
 
-
 nav ul {
     list-style: none;
     display: flex;
@@ -72,10 +71,8 @@ nav button {
     border: none;
     text-decoration: none;
     font-weight: 900;
-    font-family: playfair display;
-    
+    font-family: playfair display; 
 }
-
 
 /*Styling af grafiske elementer*/
 
@@ -83,11 +80,11 @@ hr {
     color: var(--knap);
 }
 
-#contact-icon {
-    color: var(--titel);
+.contact-icon {
+    color: var(--boks)
 }
 
-#brown-icon {
+.brown-icon {
     color: var(--knap);
 }
 
@@ -170,8 +167,9 @@ footer {
         margin: 26px;
     }
 
-    #kontakt p{
+    #kontakt {
         text-align: center;
+       
     }
 
     footer p {
@@ -197,7 +195,6 @@ footer {
         
         /*placere alt indhold i section i midten*/
         justify-content: center;
-
     }
 
     .tekstboks {
@@ -210,8 +207,6 @@ footer {
         margin-right: 26px;
         margin-top: 52px;
     }
-
-
 
     footer {
         padding-left: 26px;
@@ -244,9 +239,9 @@ footer {
         margin-right: 0;
     }
 
-    #contact-icon {
+    .contact-icon {
         font-size: 22.82px;
-        margin: 30px;
+       
     }
 
    
@@ -267,7 +262,7 @@ footer {
     }
 
     /*scroll til top og facebook link*/
-    #brown-icon {
+    .brown-icon {
         font-size: 26.16px;
         margin-top: 16px;
     }
@@ -349,7 +344,6 @@ footer {
         margin-bottom: 6%;
     }
 
-   
     #biografi i {
         margin-left: 10%;
     }
@@ -409,6 +403,11 @@ footer {
         margin-bottom: 15%;
     }
 
+    #kontakt {
+        justify-content: center;
+        text-align: center;
+    }
+
     footer {
         padding-left: 26px;
         padding-right: 26px;
@@ -441,21 +440,36 @@ footer {
         margin-right: 0;
     }
  
-    #contact-icon {
+    .contact-icon {
         font-size: 22.82px;
-        margin: 30px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .ikon-baggrund {
+        font-size: 50px;
+        color: #205ADB;
+        position: relative;
+        z-index: 0;
+    }
+
+    .kontakt-ikoner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
     }
 
 
     /*Styling af knapper*/
     
     /*tilføj anden farve ved hover på "scroll til top" og Facebook knapper*/
-   #brown-icon:hover {
+   .brown-icon:hover {
         color: var(--boks);
     }
     
     /*justere størrelse af ikoner*/
-    #brown-icon{
+    .brown-icon{
         font-size: 50px;
         margin: 3%;
     }
